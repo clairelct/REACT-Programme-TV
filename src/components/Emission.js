@@ -11,10 +11,10 @@ const Emission = ({ time, title, type, duration, image, isUnseen, direct }) => {
       </div>
       <div>
         <p>{title}</p>
-        <p>{type}</p>
+        <p className="type">{type}</p>
         <p>
-          {duration} {direct ? <span className="red">Direct</span> : ""}{" "}
-          {isUnseen ? <span className="red">Inédit</span> : ""}
+          {duration} {direct ? <span className="red">&bull; Direct</span> : ""}{" "}
+          {isUnseen ? <span className="red">&bull; Inédit</span> : ""}
         </p>
       </div>
     </div>
